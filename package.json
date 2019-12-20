@@ -1,0 +1,17 @@
+{
+  "name": "svg-web-animation",
+  "version": "1.0.0",
+  "description": "Animating SVG for the web",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "rm -rf ./public/style && sass styles.scss ./public/style/styles.css"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SVG"
+  ],
+  "author": "Laureline Paris",
+  "license": "ISC"
+}
