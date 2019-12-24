@@ -1,1 +1,183 @@
-// Style sheet
+
+/* ----- Variables ----- */
+$Righteous  : 'Righteous', cursive;
+$main-dark  : #114;
+$dark       : #339;
+
+
+/* ----- Animation ----- */
+@keyframes animateLogo {
+    from {
+        transform: translate( 70px, -70px );
+    }
+    to {
+        transform: translate( 0px, 0px );
+        fill: blue;
+        opacity: 1;
+    }
+}
+
+@keyframes underline {
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+
+/* ----- Page ----- */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+a, p, span, h2 {
+    font-weight: 200;
+}
+html { 
+    background: linear-gradient(#1BE, #339);
+    font-family: 'Lato', 'Arial';
+    color: #FFF;}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    & *:not( script ) {
+        display: inherit;
+    }
+    header, footer { 
+        width: 100vw;
+    }
+    #header-container {
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        height: 35%;
+        background-image: url('../assets/wave.svg');
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        #logo-icon {
+            height: 100px;
+            width: 100px;
+            background-image: url('../assets/logo-icon.svg');
+            background-repeat: no-repeat;
+            align-items: center;
+            mix-blend-mode: luminosity;
+            margin: 30px 50px;
+        }
+        nav {
+            width: 100%;
+            justify-content: flex-end;
+            height: fit-content;
+            padding: 20px 50px;
+            ul {
+                width: 30%;
+                justify-content: space-evenly;
+                li {
+                    list-style: unset ;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0 10px;
+                    a { 
+                        text-decoration: none;
+                        color: #FFF;
+                        letter-spacing: .5px;
+                    }
+                    .underline {
+                        align-content: center;
+                        background-color: #FFF;
+                        width: 1px;
+                        height: 1px;
+                        margin: 5px;
+                        opacity: 0;
+                    }
+                }
+                li:hover .underline {
+                    animation: underline .5s forwards;
+               }
+            }
+        }
+    }
+    #footer-container {
+        height: 50px;
+        width: inherit;
+        position: fixed;
+        bottom: 0;
+        background-color: $main-dark;
+        padding: 20px 50px;
+
+    }
+    main {
+        #layout {
+            &-left, &-right {
+                margin: 5px;
+                height: 50vh;
+                width: 50vw;
+                justify-content: center;
+                align-items: center;
+            }
+            &-left {
+                .intro-wrapper {
+                    padding: 50px;
+                    flex-direction: column;
+                    align-items: center;
+                    .description {
+                        margin: 0;
+
+                    }
+                    .company-title {
+                        font-family: $Righteous;
+                        font-size: 6em;
+                        margin: 0;
+                        color: #114;
+                    }
+                }
+            }
+        }
+        svg.svg-wrapper {
+            margin: 15% 0 0 0;
+            height: 350px;
+            width: 100vw;
+            #browser_front { mix-blend-mode: overlay; }
+    
+            #logo-out {
+                opacity: 0;
+                mix-blend-mode: hard-light;
+                animation: animateLogo  1.2s infinite alternate;
+            }
+        }
+    }
+}
+.quote {
+    align-items: center;
+    font-style: italic;
+    &:before, &:after {
+        content: '';
+        background-image: url('../assets/quote.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        height: 26px;
+        width: 26px;
+        mix-blend-mode: luminosity;
+        margin: 0 30px;
+    }
+    &:after {
+        right: 0;
+        top: 100%;
+        transform: rotate( 180deg );
+    }
+}
+
+.st0, .st4, .st6 { fill:#113; }
+.st1 { fill:#1BE; }
+.st2, .st7 { fill:#FFF; }
+.st3 { enable-background:new ;}
+.st5 { fill:#0E5D7F; }

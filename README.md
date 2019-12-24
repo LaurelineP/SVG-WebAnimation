@@ -4,7 +4,7 @@ Project: use user interaction(s) to animate an SVG home made.
 <!-- <img src="./" height="450" alt=" GIF" style="margin: 0 35%"> -->
 
 ### What is SVG ?
-SVG: **vector graphic format-based in XML**.  
+SVG - Scalable Vector Graphics: **vector graphic format-based in XML**.  
 It is a powerful and **scallable vectorial picture**  
 that uses code accordingly to "paint" a vectorial picture.  
 Usually used for icons, it can be used for  lovelies animations  
