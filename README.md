@@ -14,18 +14,21 @@ and much more !
 ### Understand path in SVG
 - **Viewbox and Viewport**
     SVG have their own attribute height and width in which it is  
-    possible to use: %, em, rem, px.
-    | SVG Attributes |  |
+    possible to use: %, em, rem, px.  
+    
+    | SVG Attributes |  |  
     |:-------:|:--------:|
     | ViewPort | SVG's size is related to its container
     | ViewBox | defines new coordinates system within the SVG canvas |
-- **Coordinates**: 
-    Are starting from the **top-left** at 0,0.
+- **Coordinates**:
+    Are starting from the **top-left** at 0,0.  
+    
     | AXIS          |                                |
     |:-------------:|--------------------------------|
     | **X**             | **horizontal**: from left to right |
     | **Y**             | **vertical**: from top to bottom   |
-- **SVG elements**:
+- **SVG elements**:  
+
     |    ELEMENTS   |MAIN ATTRIBUTES|                |
     |:-------------:|:-------:|----------------|
     | **text**      |```x, y, fill```| creates text elements |
@@ -46,8 +49,9 @@ and much more !
     | **symbol**|| never rendered but by using ```<use>``` element |
     | **g**|       | groups separated elements |
 
-- **Use SVG in web pages**
-    | | |
+- **Use SVG in web pages**  
+
+    | HOW | |
     |:---:|:---|
     | HTML | Inline SVG code |
     |  | Using ```<img>``` |
