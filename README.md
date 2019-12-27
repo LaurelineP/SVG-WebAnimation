@@ -1,8 +1,6 @@
 # SVG & CSS –– Animation for the Web
 Project: use user interaction(s) to animate an SVG home made.
-
-<!-- <img src="./" height="450" alt=" GIF" style="margin: 0 35%"> -->
-
+<!-- ![Alt text of image](put-link-to-image-here) -->
 ### What is SVG ?
 SVG - Scalable Vector Graphics: **vector graphic format-based in XML**.  
 It is a powerful and **scallable vectorial picture**  
@@ -11,11 +9,8 @@ Usually used for icons, it can be used for lovelies animations
 responding to the user  interactions ( hover, clicks, etc ...)  
 and much more !
 
-
-<legend>Codepen SVG exploration  
-
-<i>( for the code: click the button "change view" > "editor view" )</i></legend>
-<a href="https://codepen.io/laurelineparis/full/VwYWbOa" target="_blank"><img src="./public/assets/SVG-exploration.png" width="450" alt="codepen exploration of svg"></a>
+[Codepen](https://codepen.io/laurelineparis/pen/VwYWbOa): SVG Exploration
+[![Codepen SVG Exploration](./public/assets/SVG-exploration.png)](https://codepen.io/laurelineparis/full/VwYWbOa)
 
 ### Understand path in SVG
 - **Viewbox and Viewport**
@@ -55,10 +50,6 @@ and much more !
     | **symbol**|| never rendered but by using ```<use>``` element |
     | **g**|       | groups separated elements |
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 146cf96f26cf19d3d100d09f3ab676391efecf05
 - **Use SVG in web pages**  
 
     | HOW | |
