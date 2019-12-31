@@ -55,10 +55,7 @@ and much more !
     | **symbol**|| never rendered but by using ```<use>``` element |
     | **g**|       | groups separated elements |
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 146cf96f26cf19d3d100d09f3ab676391efecf05
 - **Use SVG in web pages**  
 
     | HOW | |
