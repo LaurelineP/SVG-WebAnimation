@@ -14,7 +14,8 @@ and much more !
 
 <legend>Codepen SVG exploration  
 
-<i>( for the code: click the button "change view" > "editor view" )</i></legend>
+<i>( for the code: click the button "change view" > "editor view" )</i></legend>  
+
 <a href="https://codepen.io/laurelineparis/full/VwYWbOa" target="_blank"><img src="./public/assets/SVG-exploration.png" width="450" alt="codepen exploration of svg"></a>
 
 ### Understand path in SVG
@@ -85,3 +86,4 @@ Usually your grouping folders' names, turn out to be **id** used within your SVG
 
 ### III. Resources
 Here interesting ressources
+- [CSS trick](https://css-tricks.com/svg-path-syntax-illustrated-guide/)
