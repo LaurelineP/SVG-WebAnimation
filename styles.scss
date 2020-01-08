@@ -3,6 +3,7 @@
 $Righteous  : 'Righteous', cursive;
 $main-dark  : #114;
 $dark       : #339;
+$clearBlue  : #1BE;
 
 
 /* ----- Animation ----- */
@@ -24,7 +25,6 @@ $dark       : #339;
     }
 }
 
-
 /* ----- Page ----- */
 body, html {
     height: 100%;
@@ -36,7 +36,7 @@ a, p, span, h2 {
     font-weight: 200;
 }
 html { 
-    background: linear-gradient(#1BE, #339);
+    background: linear-gradient($clearBlue, $dark);
     font-family: 'Lato', 'Arial';
     color: #FFF;}
 body {
@@ -106,13 +106,19 @@ body {
         }
     }
     #footer-container {
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-style: italic;
         height: 50px;
         width: inherit;
         position: fixed;
         bottom: 0;
         background-color: $main-dark;
-        padding: 20px 50px;
-
+        justify-content: flex-end ;
+        .author { 
+            padding: 0 30px;
+            mix-blend-mode: soft-light;
+        }
     }
     main {
         #layout {
@@ -120,10 +126,10 @@ body {
                 margin: 5px;
                 height: 50vh;
                 width: 50vw;
-                justify-content: center;
                 align-items: center;
             }
             &-left {
+                justify-content: flex-end;
                 .intro-wrapper {
                     padding: 50px;
                     flex-direction: column;
@@ -140,6 +146,7 @@ body {
                     }
                 }
             }
+            &-right { justify-content: flex-start; }
         }
         svg.svg-wrapper {
             margin: 15% 0 0 0;
@@ -155,6 +162,7 @@ body {
         }
     }
 }
+// Quotation + icons quotes
 .quote {
     align-items: center;
     font-style: italic;
@@ -175,7 +183,24 @@ body {
         transform: rotate( 180deg );
     }
 }
+.suscribe-button {
+    width: 120px;
+    font-weight: 18px;
+    padding: 12px 40px;
+    justify-content: center;
+    letter-spacing: 3px;
+    border: unset;
+    border-radius: 3px;
+    color: #FFF;
+    box-shadow: 0px 5px 8px .5px $dark;
+    background: linear-gradient($dark, $main-dark);
+    &:focus { outline: unset; }
+    &:active {
+        box-shadow: 0px 2px 5px 1px $dark;
+    }
+}
 
+/* SVG */
 .st0, .st4, .st6 { fill:#113; }
 .st1 { fill:#1BE; }
 .st2, .st7 { fill:#FFF; }

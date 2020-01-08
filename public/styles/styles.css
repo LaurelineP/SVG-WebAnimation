@@ -100,19 +100,28 @@ body #header-container nav ul li:hover .underline {
   animation: underline 0.5s forwards;
 }
 body #footer-container {
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-style: italic;
   height: 50px;
   width: inherit;
   position: fixed;
   bottom: 0;
   background-color: #114;
-  padding: 20px 50px;
+  justify-content: flex-end;
+}
+body #footer-container .author {
+  padding: 0 30px;
+  mix-blend-mode: soft-light;
 }
 body main #layout-left, body main #layout-right {
   margin: 5px;
   height: 50vh;
   width: 50vw;
-  justify-content: center;
   align-items: center;
+}
+body main #layout-left {
+  justify-content: flex-end;
 }
 body main #layout-left .intro-wrapper {
   padding: 50px;
@@ -127,6 +136,9 @@ body main #layout-left .intro-wrapper .company-title {
   font-size: 6em;
   margin: 0;
   color: #114;
+}
+body main #layout-right {
+  justify-content: flex-start;
 }
 body main svg.svg-wrapper {
   margin: 15% 0 0 0;
@@ -163,6 +175,26 @@ body main svg.svg-wrapper #logo-out {
   transform: rotate(180deg);
 }
 
+.suscribe-button {
+  width: 120px;
+  font-weight: 18px;
+  padding: 12px 40px;
+  justify-content: center;
+  letter-spacing: 3px;
+  border: unset;
+  border-radius: 3px;
+  color: #FFF;
+  box-shadow: 0px 5px 8px 0.5px #339;
+  background: linear-gradient(#339, #114);
+}
+.suscribe-button:focus {
+  outline: unset;
+}
+.suscribe-button:active {
+  box-shadow: 0px 2px 5px 1px #339;
+}
+
+/* SVG */
 .st0, .st4, .st6 {
   fill: #113;
 }
