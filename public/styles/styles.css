@@ -18,10 +18,17 @@
 }
 /* ----- Page ----- */
 body, html {
+  min-height: 100%;
+  min-width: 100%;
   height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+}
+@media screen and (max-width: 600px) {
+  body, html {
+    height: auto;
+  }
 }
 
 a, p, span, h2 {
@@ -30,6 +37,7 @@ a, p, span, h2 {
 
 html {
   background: linear-gradient(#1BE, #339);
+  background-size: cover;
   font-family: "Lato", "Arial";
   color: #FFF;
 }
@@ -39,7 +47,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1em;
+  }
 }
 body *:not(script) {
   display: inherit;
@@ -49,7 +62,7 @@ body header, body footer {
 }
 body #header-container {
   width: 100vw;
-  position: absolute;
+  position: fixed;
   top: 0;
   height: 35%;
   background-image: url("../assets/wave.svg");
@@ -67,11 +80,24 @@ body #header-container #logo-icon {
   mix-blend-mode: luminosity;
   margin: 30px 50px;
 }
+@media screen and (max-width: 600px) {
+  body #header-container #logo-icon {
+    width: 40px;
+    margin: 30px 0 30px 30px;
+  }
+}
 body #header-container nav {
   width: 100%;
   justify-content: flex-end;
   height: fit-content;
   padding: 20px 50px;
+}
+@media screen and (max-width: 600px) {
+  body #header-container nav {
+    padding: 20px 25px 25px 0;
+    justify-content: space-evenly;
+    position: relative;
+  }
 }
 body #header-container nav ul {
   width: 30%;
@@ -110,21 +136,41 @@ body #footer-container {
   background-color: #114;
   justify-content: flex-end;
 }
+@media screen and (max-width: 600px) {
+  body #footer-container {
+    position: unset;
+  }
+}
 body #footer-container .author {
   padding: 0 30px;
   mix-blend-mode: soft-light;
 }
-body main #layout-left, body main #layout-right {
-  margin: 5px;
-  height: 50vh;
-  width: 50vw;
+body main {
+  height: 100%;
   align-items: center;
 }
-body main #layout-left {
-  justify-content: flex-end;
+@media screen and (max-width: 600px) {
+  body main {
+    height: auto;
+    flex-wrap: wrap-reverse;
+    padding-bottom: 50px;
+  }
+}
+body main #layout-left, body main #layout-right {
+  margin: 5px;
+  width: 50vw;
+  align-items: space-around;
+  justify-content: center;
+  flex-grow: 1;
+}
+@media screen and (max-width: 600px) {
+  body main #layout-left, body main #layout-right {
+    margin: 15px;
+    justify-content: center;
+  }
 }
 body main #layout-left .intro-wrapper {
-  padding: 50px;
+  padding: 30px;
   flex-direction: column;
   align-items: center;
 }
@@ -141,9 +187,14 @@ body main #layout-right {
   justify-content: flex-start;
 }
 body main svg.svg-wrapper {
-  margin: 15% 0 0 0;
+  margin: 30px;
   height: 350px;
   width: 100vw;
+}
+@media screen and (max-width: 600px) {
+  body main svg.svg-wrapper {
+    margin-top: 25%;
+  }
 }
 body main svg.svg-wrapper #browser_front {
   mix-blend-mode: overlay;
@@ -170,8 +221,6 @@ body main svg.svg-wrapper #logo-out {
   margin: 0 30px;
 }
 .quote:after {
-  right: 0;
-  top: 100%;
   transform: rotate(180deg);
 }
 
