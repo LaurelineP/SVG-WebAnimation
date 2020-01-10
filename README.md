@@ -1,6 +1,6 @@
-# SVG & CSS –– Animation for the Web
+# SVG & CSS –– Animation for the Web –– [DEMO](https://laurelinep.github.io/SVG-WebAnimation/)
 Project: use user interaction(s) to animate an SVG home made.
-
+![Page preview](./project-preview.gif)
 <!-- <img src="./" height="450" alt=" GIF" style="margin: 0 35%"> -->
 
 ### What is SVG ?
